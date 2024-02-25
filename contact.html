@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="content/app.css">
+</head>
+<body>
+<!-- HEADER NAV BAR SECTION -->
+<header></header>
+<div id="alertArea"></div> <!-- for confirmation message of feedback form-->
+<main class="container">
+    <h1 class="mb-5">Contact Us</h1>
+
+    <div id="messageArea"></div>
+    <div class="row justify-content-lg-center g-3">
+        <form class="col-lg-6 col-md-10 col-sm-10">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Full name</span>
+                <input id="fullName" name="fullName" type="text" class="form-control"
+                       aria-describedby="Full Name" aria-label="Full Name Input" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Contact Number</span>
+                <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
+                       aria-describedby="Contact Number" aria-label="Contact Number Input" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Email</span>
+                <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                       aria-describedby="Email Address" aria-label="Email Address Input" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Your Message</span>
+                <input id="message" name="message" class="form-control"
+                       aria-describedby="Message" aria-label="Message Input" required>
+            </div>
+
+            <div class="input-group mb-3 form-check">
+                <input id="subscribeCheckbox" name="subscribeCheckbox" type="checkbox" class="form-check-input">
+                <label class="form-check-label" for="subscribeCheckbox"> Subscribe to our contact list</label>
+            </div>
+
+            <button id="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Submit</button>
+            <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate-left"></i> Cancel</button>
+        </form>
+
+
+        <!-- Feedback Form Section -->
+        <div class="col-lg-5 col-md-10 col-sm-10">
+            <form id="feedbackForm" class="feedback-form">
+                <div class="mb-3">
+                    <label for="feedbackName" class="form-label">Your Name</label>
+                    <input type="text" id="feedbackName" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="feedbackRating" class="form-label">Rating</label>
+                    <select id="feedbackRating" class="form-select">
+                        <option value="5">Excellent</option>
+                        <option value="4">Good</option>
+                        <option value="3">Average</option>
+                        <option value="2">Poor</option>
+                        <option value="1">Terrible</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="feedbackComments" class="form-label">Your Comments</label>
+                    <textarea id="feedbackComments" class="form-control" placeholder="Your Comments" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+
+
+</main>
+
+<!-- Footer -->
+<footer id="footer"></footer>
+
+<!-- Javascript section-->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/namespace.js"></script>
+<script src="scripts/contact.js"></script>
+<script src="scripts/app.js"></script>
+
+</body>
+</html>

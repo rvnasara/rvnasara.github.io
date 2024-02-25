@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="content/app.css">
+</head>
+<body>
+<!-- HEADER NAV BAR SECTION -->
+<header></header>
+<main class="container">
+    <div class="text-background">
+        <div class="text-background">
+            <div id ="eventsList" class="searchable-item">
+                <h2 class="post-title">Events</h2>
+                <p class="post-content"></p>
+            </div>
+    <h1>Our location</h1>
+    <div id="map" style="height:400px; width:50%; ">
+    </div>
+    </div>
+    </div>
+</main>
+
+<!-- Footer navbar-->
+<footer id="footer"></footer>
+<!-- Javascript section-->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWs9KDHm8-FTBzWha168g7Rw87rkt7HVE&callback=initMap&libraries=places&v=beta"></script>
+<script src="./scripts/app.js"></script>
+</body>
+</html>
