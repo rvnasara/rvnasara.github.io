@@ -1,0 +1,298 @@
+/**
+background for the rest of the pages except home
+ */
+body {
+    background-color: #888888;
+}
+/**
+for the slideshow on the home page
+ */
+#slideshow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/**
+for the slideshow on the home page
+ */
+#slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+#slideshow img.active {
+    opacity: 1;
+}
+/**
+for the background of each pages text to be highlighted for better visibility
+ */
+.text-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+/**
+for the name of the project
+ */
+.projectNames {
+    font-size: 1.5em;
+    color: #333;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+/**
+for the portfolio
+ */
+.project-details {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.project-details img {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-details p {
+    color: #555;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/**
+load more button in the portfolio page
+ */
+#loadMoreBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/** The accordion in the services page
+ */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+.accordion:hover, .accordion.active {
+    background-color: #ccc;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.panel img{
+    width: 400px;
+    height: auto;
+    margin-right: 10px;
+}
+/**
+Grid layout for team
+ */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-member {
+    text-align: center;
+    cursor: pointer;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+/**
+modal to be used in the team page for extra details
+ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+/**
+to be able to close the modal
+ */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Add padding directly to the .form-control class on register fields */
+.form-control {
+    padding: 10px;
+    margin: 5px;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/**
+the bottom navbar
+ */
+footer.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+/**
+to ensure content on pages isnt covered by navbar
+ */
+main {
+    padding-bottom: 60px;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map{
+    position: absolute;
+    bottom: 70px; /* Adjust so it's above the bottom navbar */
+    right: 20px; /* Right margin for aesthetic spacing */
+    width: 400px; /* Slightly larger width */
+    height: 250px; /* Slightly larger height */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+
+
+#searchResults {
+    position: absolute;
+    z-index: 1000;
+
+
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    opacity: 0.8;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Navigation buttons */
+.lightbox .prev, .lightbox .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.lightbox .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.lightbox .prev {
+    left: 0;
+}

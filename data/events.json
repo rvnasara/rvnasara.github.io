@@ -1,0 +1,21 @@
+{
+  "events":
+    [
+      {
+        "Title": "Tech Conference",
+        "Date": "10-03-2024",
+        "Description": "Annual technology conference showcasing latest innovations"
+      },
+      {
+        "Title": "Job Fair",
+        "Date": "15-03-2024",
+        "Description": "Career fair featuring various job opportunities"
+      },
+      {
+        "Title": "Music Concert",
+        "Date": "20-03-2024",
+        "Description": "Live performance by popular artists"
+      }
+
+    ]
+}

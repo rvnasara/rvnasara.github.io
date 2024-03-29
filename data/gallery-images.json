@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "src": "content/images/stock-image1.jpg",
+      "alt": "Stock Image 1"
+    },
+    {
+      "src": "content/images/stock-image2.jpg",
+      "alt": "Stock Image 2"
+    },
+    {
+      "src": "content/images/stock-image3.jpg",
+      "alt": "Stock Image 3"
+    },
+    {
+      "src": "content/images/stock-image4.jpg",
+      "alt": "Stock Image 4"
+    }
+
+  ]
+}

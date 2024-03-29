@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-black">
+
+    <div class="container-fluid"><i class="fa-solid fa-people-group"></i>
+
+        <a class="navbar-brand" data="home">Harmony Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link"  data="home"><i class="fa-solid fa-home"></i>Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data="portfolio"><i class="fa-solid fa-project-diagram"></i> Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data="services"><i class="fa-solid fa-map-signs"></i> Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="blog" data="blog"><i class="fa-solid fa-envelope"></i> Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="events" data="events"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="gallery" data="gallery"><i class="fa-solid fa-image"></i> Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="login" data="login"><i class="fa-solid fa-sign-in-alt"></i> Login</a>
+                </li>
+                <form id="searchForm" onsubmit="event.preventDefault(); openPage();">
+                    <input type="search" id="searchInput" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+
+                <div id="searchResults" class="list-group"></div> <!-- Container for displaying search results -->
+
+            </ul>
+        </div>
+    </div>
+
+</nav>

@@ -1,0 +1,51 @@
+{
+  "users":
+      [
+        {
+          "FirstName" : "Bilbo",
+          "LastName" : "Baggins",
+          "Address" : "123 Maple Street",
+          "ContactNumber" : "905-123-1234",
+          "EmailAddress": "bilbo@example.com",
+          "Username" : "bbaggins",
+          "Password" : "123456"
+        },
+
+        {
+          "FirstName" : "Samwise",
+          "LastName" : "Gamgee",
+          "Address" : "456 Elm Avenue",
+          "Contact Number" : "416-555-1234",
+          "EmailAddress": "samwise@example.com",
+          "Username" : "sgamgee",
+          "Password" : "123456"
+
+        },
+
+        {
+          "FirstName" : "Admin",
+          "LastName" : "admin",
+          "Address" : "789 Oak Lane",
+          "ContactNumber" : "514-555-9012",
+          "EmailAddress": "admin@example.com",
+          "Username" : "admin",
+          "Password" : "123456"
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ]
+
+}
